@@ -22,4 +22,5 @@ int main(void)
     n5 = n % 8;
     
     printf("%d%d%d%d%d",n5,n4,n3,n2,n1);
+    return 0;
 }

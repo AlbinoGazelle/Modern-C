@@ -11,5 +11,5 @@ int main(void)
     second_sum = i1 + i3 + i5 + i7 + i9 + i11;
     total = second_sum + (first_sum * 3) - 1;
     printf("Check digit: %d\n",9 - (total % 10));
-
+    return 0;
 }

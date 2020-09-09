@@ -1,5 +1,7 @@
 #ignore exercises
 Excersies/
+# Ignore .vscode
+.vscode
 # Prerequisites
 *.d
 
