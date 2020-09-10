@@ -6,8 +6,16 @@
 
 int main(void)
 {
-    int time, convertTime;
+    int time1,time2, convertTime;
     printf("Enter a 24-hour time: ");
-    scanf("%d:%d",time);
-    printf("%d",time);
+    scanf("%d:%d",&time1,&time2);
+    
+    if (time1<12){
+        printf("Equivalent 12 hour time: %d:%d AM",time1, time2);
+    } else if (time1>12){
+        time1 = time1 - 12;
+        printf("Equivalent 12 hour time: %d:%d PM",time1, time2);
+    } else {
+        printf("Equivalent 12 hour time: %d:%d PM",time1, time2);
+    }
 }
