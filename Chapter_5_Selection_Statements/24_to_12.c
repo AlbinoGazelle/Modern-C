@@ -18,4 +18,5 @@ int main(void)
     } else {
         printf("Equivalent 12 hour time: %d:%d PM",time1, time2);
     }
+    return 0;
 }
