@@ -4,4 +4,4 @@ All programs were compiled with [gcc](https://osdn.net/projects/mingw/releases/)
 
 Certain projects require code from the book itself, for this reason I have included book-copyright.txt. This covers code from the book itself.
 
-All other code is licensed under the MIT License (Essentially do whatever you want, I'm not liable)
+All other code is licensed under the MIT License
