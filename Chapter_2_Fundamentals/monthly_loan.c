@@ -1,9 +1,10 @@
-//Chapter 2 Programming Project #
+//Chapter 2 Programming Project #8
 //write a program that calculates the remaining 
 //balance on a loan after the 1st, 2nd, and 3rd
 //monthly payments
 //balance is decreased by the monthly payment each month
 //increased by the balance times monthly interest rate
+
 #include <stdio.h>
 
 int main(void)
