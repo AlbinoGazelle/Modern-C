@@ -6,56 +6,22 @@
 
 int main(void)
 {
-    int M, D, Y, secondM, secondD, secondY,earliestM, earliestD, earliestY;
+    int M, D, Y, M2, D2, Y2;
+    printf("Enter date(mm/dd/yy): ");
+    scanf("%d/%d/%d",&M,&D,&Y);
 
-    do
+    while (1)
     {
-        secondM = M;
-        secondY = Y;
-        secondD = D;
-        printf("Enter first date (mm/dd/yy): ");
-        scanf("%d/%d/%d",&M,&D,&Y);
-        if(Y>secondY){
-            earliestM = secondM;
-            earliestD = secondD;
-            earliestY = secondY;
-        } else if(Y == secondY){
-            if(M<secondM){
-                earliestY = secondM;
-                earliestD = secondD;
-                earliestY = secondY;
-            } else if(M == secondM){
-                if(D>secondD){
-                    earliestM = secondM;
-                    earliestD = secondD;
-                    earliestY = secondY;
-                }
-            }
+        printf("Enter date(mm/dd/yy): ");
+        scanf("%d/%d/%d",&M2,&D2,&Y2);
+        if(M2==0&&D2==0&&Y2==0){
+            break;
         }
-        else {
-            earliestM = secondM;
-            earliestD = secondD;
-            earliestY = secondY;
+        if((Y2 < Y) || (Y == Y2 && M2 < M) || (Y == Y2 && M == M2 && D2 < D)){
+            D = D2;
+            Y = Y2;
+            M = M2;
         }
-        
-    } while (M!=0&&D!=0&&Y!=00);
-    printf("%d/%d/%d is earliest date",earliestM,earliestD,earliestY);
-
-
-
-
-
-    /* if(firstY<secondY){
-        printf("%d/%d/%d is earlier than %d/%d/%d",firstM,firstD, firstY, secondM,secondD,secondY);
-    } else if(firstY == secondY){
-        if(firstM<secondM){
-            printf("%d/%d/%d is earlier than %d/%d/%d",firstM,firstD, firstY, secondM,secondD,secondY);
-        } else if(firstM == secondM){
-            if(firstD<secondD){
-                printf("%d/%d/%d is earlier than %d/%d/%d",firstM,firstD, firstY, secondM,secondD,secondY);
-            }
-        }
-    } else {
-        printf("%d/%d/%d is earlier than %d/%d/%d",secondM, secondD, secondY, firstM, firstD, firstY);
-    }  */
+    }
+    printf("Earliest Date: %d/%d/%d",M,D,Y);
 }
