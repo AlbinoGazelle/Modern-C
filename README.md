@@ -1,4 +1,4 @@
-This is my collection of completed programming projects from the book "C Programming: A Modern Approach, 2nd Edition" by Kim King.
+This is my collection of my completed programming projects from the book "C Programming: A Modern Approach, 2nd Edition" by Kim King.
 
 All programs were compiled with [gcc](https://osdn.net/projects/mingw/releases/) 9.2.0 on Windows 10 using `gcc -o output source.c`.
 
